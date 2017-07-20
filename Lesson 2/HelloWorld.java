@@ -1,4 +1,4 @@
-class code lesson {
+class HelloWorld {
 	public static void main(String args[]) {
 		System.out.println("Emma Sucks");
 	}
