@@ -1,4 +1,4 @@
-class Kevin {
+class Keevan {
 	public static void main(String[] args) {
 		boolean x = true;
 		boolean isXTrue = (x) ? x : x;
