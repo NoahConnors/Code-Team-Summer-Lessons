@@ -19,7 +19,7 @@ class atharvamulay {
 		int Yee = 5;
 		int Gub = 10;
 		int Mamo = 7;
-		int enemyAttack = 6;
+		int enemyAttack = 5;
 		System.out.println("Hello, " + userName);
 		Thread.sleep(1500);
 		String playerChoose;
@@ -39,20 +39,20 @@ class atharvamulay {
 					System.out.print(subStuff(enemyHealth, Mamo));
 					System.out.println("/28 is enemy's health");
 					enemyHealth = enemyHealth - Mamo;
-				}
+				}				
 				Thread.sleep(1500);
 				System.out.print(subStuff(playerHealth,enemyAttack));
 				System.out.println("/24 is your health");
-				playerHealth = playerHealth - enemyAttack;
+				playerHealth = playerHealth - enemyAttack;				
 			}
-			if(playerHealth > 0) {
+			if(playerHealth < 0) {
 				System.out.println("GAME OVER");
 			} else {
 				playerHealth = 35;
 				enemyHealth = 40;
 				Yee = 6; 
 				Mamo = 8; 
-				enemyAttack = 7;
+				enemyAttack = 6;
 				System.out.println("Your health is now 35/35 and Yee does 6 damage while Mamo does 8 damage");
 				Thread.sleep(1500);
 				System.out.println("Would you like to enter battle");
@@ -77,13 +77,13 @@ class atharvamulay {
 						System.out.println("/35 is your health");
 						playerHealth = playerHealth - enemyAttack;
 					}
-					if(playerHealth > 0) {
+					if(playerHealth < 0) {
 						System.out.println("GAME OVER");
 					} else {
 						System.out.println("New move added called Gub and does 10 damage");
 						playerHealth = 40;
 						enemyHealth = 45;
-						enemyAttack = 8;
+						enemyAttack = 7;
 						System.out.println("Would you like to go into battle");						
 						playerChoose = userInput.nextLine();
 						if(playerChoose.equals("No")) {
@@ -110,7 +110,7 @@ class atharvamulay {
 								System.out.println("/40 is your health");
 								playerHealth = playerHealth - enemyAttack;
 							}
-							if(playerHealth > 0) {
+							if(playerHealth < 0) {
 								System.out.println("GAME OVER");
 							} else {
 								System.out.println("You've won");							
